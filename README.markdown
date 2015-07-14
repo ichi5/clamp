@@ -1,7 +1,7 @@
 Clamps an HTML element's content by adding ellipsis to it if the content inside is too long.
 
 # The difference between the original
-Use jquery.
+Use jquery.  
 truncationHTML of IE support.
 
 # Sample Usage
@@ -17,7 +17,7 @@ $("div").clamp({clamp:3, animate:true});
 $("div").clamp({
   clamp:2,
   truncationChar:'',
-  truncationHTML:'<a href="#">..Read More</a>',
+  truncationHTML:'&lt;a href=&quot;#&quot;&gt;..Read More&lt;/a&gt;',
   alwaysDisplay:true
 });
 </pre>
