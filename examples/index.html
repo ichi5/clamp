@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>clamp</title>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="../jquery.clamp.js"></script>
+  <script type="text/javascript">
+    $(function(){
+      $("div.clamp1").clamp({
+        clamp:2,
+        alwaysDisplay:false
+      });
+      $("div.clamp2").clamp({
+        clamp:5,
+        animate:true,
+        truncationChar:'...',
+        alwaysDisplay:false
+      });
+      $("div.clamp3").clamp({
+        clamp:2,
+        truncationChar:'',
+        truncationHTML:'<a href="#">..Read More</a>',
+        alwaysDisplay:true
+      });
+    });
+  </script>
+</head>
+<body style="word-break:break-all;">
+  <div class="clamp1" style="width:200px;">Curabitur magna lectus, cursus at euismod sed, aliquet a lectus.</div>
+  <br>
+  <div class="clamp2" style="width:400px;">Quisque pellentesque dui sit amet nisl sollicitudin faucibus. Ut est mauris, vestibulum ullamcorper feugiat consectetur, ullamcorper eu lorem. Mauris congue convallis felis sit amet scelerisque. Etiam sed sodales orci. Ut porta massa commodo turpis dictum suscipit. Quisque sit amet metus eget arcu lacinia pellentesque. Aliquam aliquam tortor nec odio tempus non pharetra ipsum ultricies. Aenean pretium tristique orci vitae tempus. Sed vitae quam ut felis aliquam blandit nec et odio. Mauris at magna odio, at mattis risus. Phasellus eu enim mi, sit amet hendrerit est. Integer egestas consectetur blandit. Etiam odio nibh, fermentum non venenatis nec, dictum vel ligula. Quisque rutrum imperdiet arcu at ultricies. Integer in diam ut elit euismod posuere et id sapien. Cras ligula leo, hendrerit vitae sagittis nec, commodo sed lacus. In aliquam pretium mauris sed ullamcorper. Phasellus fermentum iaculis massa ac condimentum. Ut nisl turpis, vulputate in rhoncus sed,</div>
+  <br>
+  <div class="clamp3" style="width:400px;">Curabitur magna lectus, cursus at euismod sed, aliquet a lectus.</div>
+</body>
+</html>
